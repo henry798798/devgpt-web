@@ -114,7 +114,8 @@ export const SessionProvider = ({ children }: any) => {
       const githubIdentity: any = user?.identities?.find(
         (identity) => identity?.provider === "github"
       )?.identity_data;
-      const pro = await checkIfPro(githubIdentity?.email);
+      // const pro = await checkIfPro(githubIdentity?.email);
+      const pro = true
       setIsPro(pro);
     };
     loadPaymentStatus();

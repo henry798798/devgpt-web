@@ -82,7 +82,7 @@ export const PromptInput: FC<Props> = (props) => {
       (identity) => identity?.provider === "github"
     );
 
-    console.log(githubIdentity);
+    
 
     if (!repo.owner || !repo.repo || !session?.provider_token) {
       return;

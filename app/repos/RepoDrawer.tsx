@@ -33,7 +33,7 @@ const RepoDrawer = () => {
   }, [repoWindowOpen]);
 
   useEffect(() => {
-    getRepos(session?.provider_token)
+    getRepos(session?.provider_token, 7)
       .then((allRepos) => {
         setRepos(allRepos);
       })
